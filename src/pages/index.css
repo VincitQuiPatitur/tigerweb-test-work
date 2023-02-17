@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/golosui.css);
+
+@import url(../blocks/root/root.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__logo-img/header__logo-img.css);
+@import url(../blocks/header/__button/header__button.css);
+@import url(../blocks/header/__button-image/header__button-image.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-container/header__menu-container.css);
+@import url(../blocks/header/__menu-item/header__menu-item.css);
+@import url(../blocks/header/__menu-link/header__menu-link.css);
+@import url(../blocks/header/__menu-link/_active/header__menu-link_active.css);
+@import url(../blocks/header/__menu-button/header__menu-button.css);
+@import url(../blocks/header/__menu-button-dot/header__menu-button-dot.css);
