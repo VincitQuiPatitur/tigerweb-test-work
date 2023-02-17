@@ -16,6 +16,10 @@
     background-color: #1F8EFA;
 }
 
+.header__menu-button:hover .header__menu-button-dot_type-subheader {
+    background-color: #273142;
+}
+
 .header__menu-button:active {
     background-color: #354052;
     border-radius: 4px;

@@ -1,0 +1,15 @@
+.subheader__link-label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    color: #354052;
+    cursor: pointer;
+    transition: color .3s ease-out 0s;
+}
+
+.subheader__link-label:hover {
+    color: #0085F0;
+}

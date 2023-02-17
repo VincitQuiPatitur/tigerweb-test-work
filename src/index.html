@@ -1,36 +1,65 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mesto Russia">
-  <meta name="keywords" content="HTML5, CSS, JavaScript">
-  <meta name="author" content="Кострова Арина">
-  <title>TigerWeb</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mesto Russia">
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+    <meta name="author" content="Кострова Арина">
+    <title>TigerWeb</title>
 </head>
 <body class="root">
 <header class="header">
-  <div class="header__logo">
-    <img src="<%=require('./images/header-logo.png')%>"  alt="Логотип белый силуэт головы тигра на голубом круге и надпись TProjects" class="header__logo-img">
-  </div>
-  <div class="header__button">
-    <button class="header__button-image"></button>
-  </div>
-  <nav class="header__menu">
-    <ul class="header__menu-container">
-      <li class="header__menu-item"><a class="header__menu-link header__menu-link_active">Рабочий стол</a></li>
-      <li class="header__menu-item"><a class="header__menu-link">Сделки</a></li>
-      <li class="header__menu-item"><a class="header__menu-link">Задачи</a></li>
-      <li class="header__menu-item"><a class="header__menu-link">Проекты</a></li>
-      <li class="header__menu-item"><a class="header__menu-link">Контакты</a></li>
-      <li class="header__menu-item"><a class="header__menu-link">Компании</a></li>
-    </ul>
-  </nav>
-  <button class="header__menu-button">
-  <div class="header__menu-button-dot"></div>
-  <div class="header__menu-button-dot"></div>
-  <div class="header__menu-button-dot"></div>
-</button>
+    <div class="header__logo">
+        <img src="<%=require('./images/header-logo.png')%>"
+             alt="Логотип белый силуэт головы тигра на голубом круге и надпись TProjects" class="header__logo-img">
+    </div>
+    <div class="header__button">
+        <button class="header__button-image"></button>
+    </div>
+    <nav class="header__menu">
+        <ul class="header__menu-container">
+            <li class="header__menu-item"><a class="header__menu-link header__menu-link_active">Рабочий стол</a></li>
+            <li class="header__menu-item"><a class="header__menu-link">Сделки</a></li>
+            <li class="header__menu-item"><a class="header__menu-link">Задачи</a></li>
+            <li class="header__menu-item"><a class="header__menu-link">Проекты</a></li>
+            <li class="header__menu-item"><a class="header__menu-link">Контакты</a></li>
+            <li class="header__menu-item"><a class="header__menu-link">Компании</a></li>
+        </ul>
+    </nav>
+    <button class="header__menu-button">
+        <div class="header__menu-button-dot"></div>
+        <div class="header__menu-button-dot"></div>
+        <div class="header__menu-button-dot"></div>
+    </button>
 </header>
+<section class="subheader">
+    <ul class="subheader__container">
+        <li class="subheader__item">
+            <p class="subheader__link-label">Работа с задачами</p>
+        </li>
+        <li class="subheader__item">
+            <p class="subheader__day-of-week"></p>
+            <p class="subheader__time"></p>
+        </li>
+        <li class="subheader__item">
+            <img src="<%=require('./images/weather-img.png')%>" alt="Изображение погоды" class="subheader__weather-img">
+            <p class="subheader__temperature">-8&deg</p>
+        </li>
+    </ul>
+    <ul class="subheader__editing">
+        <li class="subheader__editing-item">
+            <button class="header__menu-button">
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+            </button>
+        </li>
+        <li class="subheader__editing-item"><img class="subheader__question" src="<%=require('./images/button-question.png')%>" alt="Кнопка в виде вопроса в круге"/></li>
+        <li class="subheader__editing-item">
+            <button class="subheader__add-button">Добавить</button>
+        </li>
+    </ul>
+</section>
 </body>
 </html>
