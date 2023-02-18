@@ -1,0 +1,11 @@
+@import "../../../pages/variables.scss";
+
+.navbar__menu-button {
+  width: 100%;
+  height: $panel-size;
+  border: none;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}

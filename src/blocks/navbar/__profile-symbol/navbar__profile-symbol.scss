@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.navbar__profile-symbol {
+  @include profile-letter;
+  font-weight: $bold-font-weight;
+  color: $card-header-text-color;
+  margin: 0;
+}

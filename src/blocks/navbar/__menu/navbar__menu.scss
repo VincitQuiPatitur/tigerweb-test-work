@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.navbar__menu {
+  background-color: $primary-text-color;
+  height: calc(100% - #{$panel-size});
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

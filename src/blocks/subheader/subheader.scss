@@ -1,8 +1,8 @@
 @import "../../pages/variables.scss";
 
 .subheader {
-  width: 100%;
-  min-height: 56px;
+  width: calc(100% - #{$panel-size});
+  min-height: $panel-size;
   border-bottom: 1px solid $border-color;
   background-color: $header-text-color;
   padding: 0 16px;

@@ -1,0 +1,20 @@
+@import "../../../pages/variables.scss";
+
+.navbar__menu-item {
+  width: 100%;
+  position: relative;
+}
+
+.navbar__menu-item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  width: 32px;
+  border-bottom: 1px solid $card-header-text-color;
+}
+
+.navbar__menu-item:last-child:after {
+  content: "";
+  border-bottom: none;
+}

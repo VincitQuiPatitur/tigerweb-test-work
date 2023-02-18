@@ -33,6 +33,7 @@
         <div class="header__menu-button-dot"></div>
     </button>
 </header>
+
 <section class="subheader">
     <ul class="subheader__container">
         <li class="subheader__item">
@@ -63,5 +64,47 @@
         </li>
     </ul>
 </section>
+
+<aside class="navbar">
+    <section class="navbar__user-profile">
+        <button class="navbar__profile-button">
+            <p class="navbar__profile-symbol">B</p>
+        </button>
+    </section>
+    <section class="navbar__menu">
+        <ul class="navbar__menu-container">
+            <li class="navbar__menu-item">
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/docs-icon.png')%>" alt="Иконка документов" class="navbar__menu-icon">
+                </button>
+            </li>
+            <li class="navbar__menu-item">
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/dialog-icon.png')%>" alt="Иконка сообщения" class="navbar__menu-icon">
+                </button>
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/notification-icon.png')%>" alt="Иконка уведомления" class="navbar__menu-icon">
+                </button>
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/timer-icon.png')%>" alt="Иконка таймера" class="navbar__menu-icon">
+                </button>
+            </li>
+            <li class="navbar__menu-item">
+                    <button class="navbar__menu-button">
+                        <img src="<%=require('./images/book-icon.png')%>" alt="Иконка книги" class="navbar__menu-icon">
+                    </button>
+            </li>
+            <li class="navbar__menu-item">
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/settings-icon.png')%>" alt="Иконка настроек" class="navbar__menu-icon">
+                </button>
+            </li>
+        </ul>
+        <button class="navbar__menu-support">
+            <img src="<%=require('./images/support-icon.png')%>" alt="Иконка настроек" class="navbar__menu-support-icon">
+        </button>
+    </section>
+</aside>
+
 </body>
 </html>

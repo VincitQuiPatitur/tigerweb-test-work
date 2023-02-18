@@ -1,0 +1,15 @@
+@import "../../../pages/variables.scss";
+
+.navbar__menu-support {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  background: $support-color;
+  margin: 14px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

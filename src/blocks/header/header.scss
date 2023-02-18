@@ -1,8 +1,8 @@
 @import "../../pages/variables.scss";
 
 .header {
-  width: 100%;
-  height: 56px;
+  width: calc(100% - #{$panel-size});
+  height: $panel-size;
   background-color: $header-color;
   display: flex;
   justify-content: left;

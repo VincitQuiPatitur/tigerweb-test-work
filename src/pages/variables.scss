@@ -7,6 +7,7 @@ $optional-text-color: #7F8FA4;
 $border-color: #DFE3E9;
 $main-background-color: #EFF3F6;
 $header-text-color: #FFFFFF;
+$support-color: #FFB300;
 
 $font: 'Golos UI', serif;
 $main-font-weight: 500;
@@ -44,3 +45,13 @@ $light-font-weight: 400;
   }
   line-height: 16px;
 }
+
+@mixin profile-letter {
+  font: {
+    family: $font;
+    size: 24px;
+  }
+  line-height: 24px;
+}
+
+$panel-size: 56px;
