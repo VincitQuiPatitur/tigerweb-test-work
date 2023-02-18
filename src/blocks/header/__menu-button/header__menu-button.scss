@@ -1,0 +1,28 @@
+@import "../../../pages/variables.scss";
+
+.header__menu-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  margin-left: 32px;
+}
+
+.header__menu-button:hover .header__menu-button-dot {
+  background-color: $menu-color;
+}
+
+.header__menu-button:hover .header__menu-button-dot_type-subheader {
+  background-color: $header-color;
+}
+
+.header__menu-button:active {
+  background-color: $primary-text-color;
+  border-radius: 4px;
+}

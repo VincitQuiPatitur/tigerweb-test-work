@@ -1,0 +1,15 @@
+@import "../../../pages/variables.scss";
+
+.subheader__add-button {
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  background-color: $menu-color;
+  color: $header-text-color;
+  font-weight: $bold-font-weight;
+  @include info-text;
+  letter-spacing: 0.02em;
+  padding: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts/golosui.css";
+
+@import "../blocks/root/root.css";
+@import "../blocks/header/header.scss";
+@import "../blocks/header/__logo-img/header__logo-img.css";
+@import "../blocks/header/__button/header__button.css";
+@import "../blocks/header/__button-image/header__button-image.css";
+@import "../blocks/header/__menu-container/header__menu-container.css";
+@import "../blocks/header/__menu-item/header__menu-item.scss";
+@import "../blocks/header/__menu-link/header__menu-link.css";
+@import "../blocks/header/__menu-link/_active/header__menu-link_active.scss";
+@import "../blocks/header/__menu-button/header__menu-button.scss";
+@import "../blocks/header/__menu-button-dot/header__menu-button-dot.scss";
+@import "../blocks/header/__menu-button-dot/_type/header__menu-button-dot_type-subheader.scss";
+
+@import "../blocks/subheader/subheader.scss";
+@import "../blocks/subheader/__container/subheader__container.css";
+@import "../blocks/subheader/__item/subheader__item.scss";
+@import "../blocks/subheader/__link-label/subheader__link-label.scss";
+@import "../blocks/subheader/__day-of-week/subheader__day-of-week.scss";
+@import "../blocks/subheader/__time/subheader__time.scss";
+@import "../blocks/subheader/__weather-img/subheader__weather-img.css";
+@import "../blocks/subheader/__temperature/subheader__temperature.scss";
+@import "../blocks/subheader/__editing/subheader__editing.css";
+@import "../blocks/subheader/__question/subheader__question.css";
+@import "../blocks/subheader/__add-button/subheader__add-button.scss";

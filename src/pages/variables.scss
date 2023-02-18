@@ -1,0 +1,46 @@
+$menu-color: #1F8EFA;
+$subheader-color: #0085F0;
+$header-color: #273142;
+$primary-text-color: #354052;
+$card-header-text-color: #516173;
+$optional-text-color: #7F8FA4;
+$border-color: #DFE3E9;
+$main-background-color: #EFF3F6;
+$header-text-color: #FFFFFF;
+
+$font: 'Golos UI', serif;
+$main-font-weight: 500;
+$bold-font-weight: 700;
+$light-font-weight: 400;
+
+@mixin header-text {
+  font: {
+    family: $font;
+    size: 16px;
+  }
+  line-height: 18px;
+}
+
+@mixin info-text {
+  font: {
+    family: $font;
+    size: 14px;
+  }
+  line-height: 16px;
+}
+
+@mixin phone-font {
+  font: {
+    family: $font;
+    size: 12px;
+  }
+  line-height: 14px;
+}
+
+@mixin mail-font {
+  font: {
+    family: $font;
+    size: 13px;
+  }
+  line-height: 16px;
+}

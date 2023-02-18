@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 const days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
 let date = new Date();

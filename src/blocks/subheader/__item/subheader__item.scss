@@ -1,0 +1,19 @@
+@import "../../../pages/variables.scss";
+
+.subheader__item {
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-right: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.subheader__item:last-child {
+  border-right: none;
+}
+
+.subheader__item:first-child {
+  padding-left: 0;
+}

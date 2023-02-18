@@ -1,0 +1,16 @@
+@import "../../../pages/variables.scss";
+
+.subheader__link-label {
+  text-transform: uppercase;
+  font-weight: $bold-font-weight;
+  @include header-text;
+  letter-spacing: 0.02em;
+  margin: 0;
+  color: $primary-text-color;
+  cursor: pointer;
+  transition: color .3s ease-out 0s;
+}
+
+.subheader__link-label:hover {
+  color: $subheader-color;
+}
