@@ -4,6 +4,8 @@
   width: calc(100% - #{$panel-size});
   height: $panel-size;
   background-color: $header-color;
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: left;
   align-items: center;

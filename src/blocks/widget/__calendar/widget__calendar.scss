@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.widget__calendar {
+  margin: 0;
+  @include info-text;
+  color: $primary-text-color;
+  font-weight: $main-font-weight;
+}

@@ -1,13 +1,16 @@
+$border-top-blue: #3A9EFF;
 $menu-color: #1F8EFA;
 $subheader-color: #0085F0;
 $header-color: #273142;
 $primary-text-color: #354052;
 $card-header-text-color: #516173;
 $optional-text-color: #7F8FA4;
+$widget-border: #C2CAD4;
 $border-color: #DFE3E9;
-$main-background-color: #EFF3F6;
+$widget-area-color: #EFF3F6;
 $header-text-color: #FFFFFF;
 $support-color: #FFB300;
+$border-top-red: #E91E63;
 
 $font: 'Golos UI', serif;
 $main-font-weight: 500;
@@ -54,4 +57,22 @@ $light-font-weight: 400;
   line-height: 24px;
 }
 
+@mixin flexible-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexible-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 $panel-size: 56px;
+$border-radius-small: 4px;
+$border-radius-big: 8px;
+$icon-size: 20px;
+$gap8: 8px;
+$gap16: 16px;
+$big-button: 40px;

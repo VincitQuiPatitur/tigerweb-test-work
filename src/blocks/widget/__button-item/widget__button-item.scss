@@ -1,0 +1,12 @@
+@import "../../../pages/variables.scss";
+
+.widget__button-item {
+  height: $icon-size;
+  width: $icon-size;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  background: transparent;
+  position: relative;
+}

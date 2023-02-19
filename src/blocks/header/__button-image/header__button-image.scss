@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+.header__button-image {
+    background: url('../images/header-button.png') center center no-repeat;
+    background-size: cover;
+    border: none;
+    width: $big-button;
+    height: $big-button;
+    cursor: pointer;
+}

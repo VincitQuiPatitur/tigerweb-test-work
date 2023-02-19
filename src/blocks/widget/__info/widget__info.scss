@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.widget__info {
+  @include mail-font;
+  font-weight: $light-font-weight;
+  color: $optional-text-color;
+  @include flexible-center;
+  gap: $gap8;
+}

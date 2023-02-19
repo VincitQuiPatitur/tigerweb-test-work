@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.widget__header {
+  height: 70px;
+  box-sizing: border-box;
+  padding: 10px 16px 15px;
+  border-bottom: 1px solid $border-color;
+  @include flexible-space-between;
+}

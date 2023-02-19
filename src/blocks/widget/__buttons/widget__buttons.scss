@@ -1,0 +1,6 @@
+@import "../../../pages/variables.scss";
+
+.widget__buttons {
+  @include flexible-center;
+  gap: $gap16;
+}

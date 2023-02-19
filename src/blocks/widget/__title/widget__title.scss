@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.widget__title {
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  @include header-text;
+  font-weight: $main-font-weight;
+  color: $primary-text-color;
+}

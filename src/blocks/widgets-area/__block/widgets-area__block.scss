@@ -1,0 +1,105 @@
+@import "../../../pages/variables.scss";
+
+.widgets-area__block {
+  border: 1px dashed $widget-border;
+  border-radius: $border-radius-small;
+}
+
+.widgets-area__block-b1 {
+  grid-area: b1;
+}
+
+.widgets-area__block-b2 {
+  grid-area: b2;
+}
+
+.widgets-area__block-b3 {
+  grid-area: b3;
+}
+
+.widgets-area__block-b4 {
+  grid-area: b4;
+}
+
+.widgets-area__block-b5 {
+  grid-area: b5;
+}
+
+.widgets-area__block-b6 {
+  grid-area: b6;
+}
+
+.widgets-area__block-b7 {
+  grid-area: b7;
+}
+
+.widgets-area__block-b8 {
+  grid-area: b8;
+}
+
+.widgets-area__block-b9 {
+  grid-area: b9;
+}
+
+.widgets-area__block-b10 {
+  grid-area: b10;
+}
+
+.widgets-area__block-b11 {
+  grid-area: b11;
+}
+
+.widgets-area__block-b12 {
+  grid-area: b12;
+}
+
+.widgets-area__block-b13 {
+  grid-area: b13;
+}
+
+.widgets-area__block-b14 {
+  grid-area: b14;
+}
+
+.widgets-area__block-b15 {
+  grid-area: b15;
+}
+
+.widgets-area__block-b16 {
+  grid-area: b16;
+}
+
+.widgets-area__block-b17 {
+  grid-area: b17;
+}
+
+.widgets-area__block-b18 {
+  grid-area: b18;
+}
+
+.widgets-area__block-b19 {
+  grid-area: b19;
+}
+
+.widgets-area__block-b20 {
+  grid-area: b20;
+}
+
+.widgets-area__block-b21 {
+  grid-area: b21;
+}
+
+.widgets-area__block-f1 {
+  grid-area: f1;
+  border-top: 4px solid $border-top-blue;
+}
+
+.widgets-area__block-f2 {
+  grid-area: f2;
+  border-top: 4px solid $border-top-red;
+}
+
+.widgets-area__block-f3 {
+  grid-area: f3;
+  border-top: 4px solid $support-color;
+}

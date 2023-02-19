@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.widget__subtitle {
+  margin: 0;
+  @include info-text;
+  color: $card-header-text-color;
+  font-weight: $main-font-weight;
+}

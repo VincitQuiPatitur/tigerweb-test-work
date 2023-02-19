@@ -5,7 +5,7 @@
 @import "../blocks/header/header.scss";
 @import "../blocks/header/__logo-img/header__logo-img.css";
 @import "../blocks/header/__button/header__button.css";
-@import "../blocks/header/__button-image/header__button-image.css";
+@import "../blocks/header/__button-image/header__button-image.scss";
 @import "../blocks/header/__menu-container/header__menu-container.css";
 @import "../blocks/header/__menu-item/header__menu-item.scss";
 @import "../blocks/header/__menu-link/header__menu-link.css";
@@ -36,4 +36,29 @@
 @import "../blocks/navbar/__menu-button/navbar__menu-button.scss";
 @import "../blocks/navbar/__menu-icon/navbar__menu-icon.css";
 @import "../blocks/navbar/__menu-support/navbar__menu-support.scss";
-@import "../blocks/navbar/__menu-support-icon/navbar__menu-support-icon.css";
+@import "../blocks/navbar/__menu-support-icon/navbar__menu-support-icon.scss";
+
+@import "../blocks/widgets-area/widgets-area.scss";
+@import "../blocks/widgets-area/__block/widgets-area__block";
+
+@import "../blocks/widget/widget.scss";
+@import "../blocks/widget/__header/widget__header.scss";
+@import "../blocks/widget/__header-container/widget__header-container.scss";
+@import "../blocks/widget/__title/widget__title.scss";
+@import "../blocks/widget/__subtitle/widget__subtitle.scss";
+@import "../blocks/widget/__slash/widget__slash.scss";
+@import "../blocks/widget/__menu/widget__menu";
+@import "../blocks/widget/__calendar/widget__calendar.scss";
+@import "../blocks/widget/__header-button/widget__header-button.scss";
+@import "../blocks/widget/__body/widget__body.css";
+@import "../blocks/widget/__footer/widget__footer.scss";
+@import "../blocks/widget/__info/widget__info.scss";
+@import "../blocks/widget/__contact-number/widget__contact-number.scss";
+@import "../blocks/widget/__date/widget__date.css";
+@import "../blocks/widget/__button-item/widget__button-item.scss";
+@import "../blocks/widget/__button-icon/widget__button-icon.scss";
+@import "../blocks/widget/__buttons/widget__buttons.scss";
+@import "../blocks/widget/__button-prompt/widget__button-prompt.scss";
+@import "../blocks/widget/__button-prompt/_type/widget__button-prompt_type_refresh.css";
+@import "../blocks/widget/__button-prompt/_type/widget__button-prompt_type_stretch.css";
+

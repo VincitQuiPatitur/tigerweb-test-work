@@ -80,31 +80,162 @@
             </li>
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/dialog-icon.png')%>" alt="Иконка сообщения" class="navbar__menu-icon">
+                    <img src="<%=require('./images/dialog-icon.png')%>" alt="Иконка сообщения"
+                         class="navbar__menu-icon">
                 </button>
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/notification-icon.png')%>" alt="Иконка уведомления" class="navbar__menu-icon">
+                    <img src="<%=require('./images/notification-icon.png')%>" alt="Иконка уведомления"
+                         class="navbar__menu-icon">
                 </button>
                 <button class="navbar__menu-button">
                     <img src="<%=require('./images/timer-icon.png')%>" alt="Иконка таймера" class="navbar__menu-icon">
                 </button>
             </li>
             <li class="navbar__menu-item">
-                    <button class="navbar__menu-button">
-                        <img src="<%=require('./images/book-icon.png')%>" alt="Иконка книги" class="navbar__menu-icon">
-                    </button>
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/book-icon.png')%>" alt="Иконка книги" class="navbar__menu-icon">
+                </button>
             </li>
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/settings-icon.png')%>" alt="Иконка настроек" class="navbar__menu-icon">
+                    <img src="<%=require('./images/settings-icon.png')%>" alt="Иконка настроек"
+                         class="navbar__menu-icon">
                 </button>
             </li>
         </ul>
         <button class="navbar__menu-support">
-            <img src="<%=require('./images/support-icon.png')%>" alt="Иконка настроек" class="navbar__menu-support-icon">
+            <img src="<%=require('./images/support-icon.png')%>" alt="Иконка настроек"
+                 class="navbar__menu-support-icon">
         </button>
     </section>
 </aside>
+
+<main class="widgets-area">
+    <div class="widgets-area__block widgets-area__block-f1 widget">
+        <div class="widget__header">
+            <div class="widget__header-container">
+                <p class="widget__title">Распределение задач</p>
+                <p class="widget__subtitle">Задачи</p>
+                <p class="widget__slash">/</p>
+                <p class="widget__menu widget__header-button">Неделя</p>
+                <p class="widget__calendar widget__header-button">08.01.22 - 15.01.22</p>
+            </div>
+            <button class="header__menu-button">
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+            </button>
+        </div>
+        <div class="widget__body"></div>
+        <div class="widget__footer">
+            <div class="widget__info">
+                <p class="widget__date">на 15 фев 11:26</p>
+            </div>
+            <div class="widget__buttons">
+                <button class="widget__button-item">
+                    <img src="<%=require('./images/button-refresh.png')%>"
+                         alt="Кнопка обновления данных" class="widget__button-icon">
+                    <span class="widget__button-prompt widget__button-prompt_type_refresh">Обновить&nbsp;данные</span>
+                </button>
+                <button class="widget__button-item">
+                    <img src="<%=require('./images/button-stretch.png')%>"
+                         alt="Кнопка растяжения" class="widget__button-icon">
+                    <span class="widget__button-prompt widget__button-prompt_type_stretch">Растянуть</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="widgets-area__block widgets-area__block-f2 widget">
+        <div class="widget__header">
+            <div class="widget__header-container">
+                <p class="widget__title">Распределение задач</p>
+                <p class="widget__subtitle">Задачи</p>
+                <p class="widget__slash">/</p>
+                <p class="widget__menu widget__header-button">Неделя</p>
+                <p class="widget__calendar widget__header-button">08.01.22 - 15.01.22</p>
+            </div>
+            <button class="header__menu-button">
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+            </button>
+        </div>
+        <div class="widget__body"></div>
+        <div class="widget__footer">
+            <div class="widget__info">
+                <p class="widget__date">на 15 фев 11:26</p>
+            </div>
+            <div class="widget__buttons">
+                <button class="widget__button-item">
+                    <img src="<%=require('./images/button-refresh.png')%>"
+                         alt="Кнопка обновления данных" class="widget__button-icon">
+                    <span class="widget__button-prompt widget__button-prompt_type_refresh">Обновить&nbsp;данные</span>
+                </button>
+                <button class="widget__button-item">
+                    <img src="<%=require('./images/button-stretch.png')%>"
+                         alt="Кнопка растяжения" class="widget__button-icon">
+                    <span class="widget__button-prompt widget__button-prompt_type_stretch">Растянуть</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="widgets-area__block widgets-area__block-f3 widget">
+        <div class="widget__header">
+            <div class="widget__header-container">
+                <p class="widget__title">Контакты</p>
+                <p class="widget__subtitle">Контакты</p>
+                <p class="widget__slash">/</p>
+                <p class="widget__menu">Фильтр не выбран</p>
+            </div>
+            <button class="header__menu-button">
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+                <div class="header__menu-button-dot header__menu-button-dot_type-subheader"></div>
+            </button>
+        </div>
+        <div class="widget__body"></div>
+        <div class="widget__footer">
+            <div class="widget__info">
+                <p class="widget__contact">Контактов</p>
+                <p class="widget__contact-number">11</p>
+                <p class="widget__date">на 15 фев 11:26</p>
+            </div>
+            <div class="widget__buttons">
+                <button class="widget__button-item">
+                    <img src="<%=require('./images/button-refresh.png')%>"
+                         alt="Кнопка обновления данных" class="widget__button-icon">
+                    <span class="widget__button-prompt widget__button-prompt_type_refresh">Обновить&nbsp;данные</span>
+                </button>
+                <button class="widget__button-item">
+                    <img src="<%=require('./images/button-stretch.png')%>"
+                         alt="Кнопка растяжения" class="widget__button-icon">
+                    <span class="widget__button-prompt widget__button-prompt_type_stretch">Растянуть</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="widgets-area__block widgets-area__block-b1"></div>
+    <div class="widgets-area__block widgets-area__block-b2"></div>
+    <div class="widgets-area__block widgets-area__block-b3"></div>
+    <div class="widgets-area__block widgets-area__block-b4"></div>
+    <div class="widgets-area__block widgets-area__block-b5"></div>
+    <div class="widgets-area__block widgets-area__block-b6"></div>
+    <div class="widgets-area__block widgets-area__block-b7"></div>
+    <div class="widgets-area__block widgets-area__block-b8"></div>
+    <div class="widgets-area__block widgets-area__block-b9"></div>
+    <div class="widgets-area__block widgets-area__block-b10"></div>
+    <div class="widgets-area__block widgets-area__block-b11"></div>
+    <div class="widgets-area__block widgets-area__block-b12"></div>
+    <div class="widgets-area__block widgets-area__block-b13"></div>
+    <div class="widgets-area__block widgets-area__block-b14"></div>
+    <div class="widgets-area__block widgets-area__block-b15"></div>
+    <div class="widgets-area__block widgets-area__block-b16"></div>
+    <div class="widgets-area__block widgets-area__block-b17"></div>
+    <div class="widgets-area__block widgets-area__block-b18"></div>
+    <div class="widgets-area__block widgets-area__block-b19"></div>
+    <div class="widgets-area__block widgets-area__block-b20"></div>
+    <div class="widgets-area__block widgets-area__block-b21"></div>
+</main>
 
 </body>
 </html>

@@ -10,3 +10,9 @@ const timeParagraph = document.querySelector('.subheader__time');
 dateParagraph.textContent = days[now];
 timeParagraph.textContent = `${date.getHours()}:${ date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}`;
 console.log(days[now]);
+
+/*
+
+const widgetInfo = {
+    header:
+}*/

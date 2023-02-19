@@ -9,7 +9,5 @@
   background: $support-color;
   margin: 14px 0;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexible-center;
 }
