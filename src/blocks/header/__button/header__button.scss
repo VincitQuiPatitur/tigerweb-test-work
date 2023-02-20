@@ -1,0 +1,6 @@
+@import "../../../pages/variables.scss";
+
+.header__button {
+    margin: 0 28px 0 24px;
+    @include flexible-center;
+}

@@ -3,7 +3,8 @@
     background: url('../images/header-button.png') center center no-repeat;
     background-size: cover;
     border: none;
-    width: $big-button;
-    height: $big-button;
+    width: $button-size;
+    height: $button-size;
     cursor: pointer;
+    padding: 0;
 }

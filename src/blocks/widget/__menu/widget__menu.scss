@@ -3,6 +3,6 @@
 .widget__menu {
   margin: 0;
   @include info-text;
-  color: $primary-text-color;
+  color: $card-header-text-color;
   font-weight: $main-font-weight;
 }

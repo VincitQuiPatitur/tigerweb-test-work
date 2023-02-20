@@ -2,25 +2,24 @@
 
 .header__menu-button {
   border: none;
-  width: $big-button;
-  height: $big-button;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  width: $button-size;
+  height: $button-size;
+  gap: 3px;
+  @include flexible-center;
+  box-sizing: border-box;
   outline: none;
   background: transparent;
   margin-left: 32px;
+  padding: 0;
   cursor: pointer;
 }
 
 .header__menu-button:hover .header__menu-button-dot {
-  background-color: $menu-color;
+  border-color: $menu-color;
 }
 
-.header__menu-button:hover .header__menu-button-dot_type-subheader {
-  background-color: $header-color;
+.header__menu-button:hover .header__menu-button-dot_type_subheader {
+  border-color: $header-color;
 }
 
 .header__menu-button:active {

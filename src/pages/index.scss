@@ -4,7 +4,7 @@
 @import "../blocks/root/root.css";
 @import "../blocks/header/header.scss";
 @import "../blocks/header/__logo-img/header__logo-img.css";
-@import "../blocks/header/__button/header__button.css";
+@import "../blocks/header/__button/header__button.scss";
 @import "../blocks/header/__button-image/header__button-image.scss";
 @import "../blocks/header/__menu-container/header__menu-container.css";
 @import "../blocks/header/__menu-item/header__menu-item.scss";
@@ -12,7 +12,7 @@
 @import "../blocks/header/__menu-link/_active/header__menu-link_active.scss";
 @import "../blocks/header/__menu-button/header__menu-button.scss";
 @import "../blocks/header/__menu-button-dot/header__menu-button-dot.scss";
-@import "../blocks/header/__menu-button-dot/_type/header__menu-button-dot_type-subheader.scss";
+@import "../blocks/header/__menu-button-dot/_type/header__menu-button-dot_type_subheader.scss";
 
 @import "../blocks/subheader/subheader.scss";
 @import "../blocks/subheader/__container/subheader__container.css";
@@ -39,11 +39,12 @@
 @import "../blocks/navbar/__menu-support-icon/navbar__menu-support-icon.scss";
 
 @import "../blocks/widgets-area/widgets-area.scss";
-@import "../blocks/widgets-area/__block/widgets-area__block";
+@import "../blocks/widgets-area/__block/widgets-area__block.scss";
 
 @import "../blocks/widget/widget.scss";
 @import "../blocks/widget/__header/widget__header.scss";
 @import "../blocks/widget/__header-container/widget__header-container.scss";
+@import "../blocks/widget/__header-settings-button/widget__header-settings-button.scss";
 @import "../blocks/widget/__title/widget__title.scss";
 @import "../blocks/widget/__subtitle/widget__subtitle.scss";
 @import "../blocks/widget/__slash/widget__slash.scss";

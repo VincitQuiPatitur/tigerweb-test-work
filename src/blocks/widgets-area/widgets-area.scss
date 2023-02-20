@@ -2,14 +2,17 @@
 
 .widgets-area {
   width: calc(100% - #{$panel-size});
+  height: calc(100vh - #{$panel-size} * 2);
+  overflow: auto;
   margin-top: calc(#{$panel-size} * 2);
   padding: 16px;
   box-sizing: border-box;
   background-color: $widget-area-color;
   display: grid;
   gap: $gap16;
-  grid-template-columns: repeat(6, minmax(auto, 292px));
-  grid-template-rows: repeat(1, 520px) repeat(14, minmax(auto, 192px));
+  //calc((#{$min-screen-size} - #{$panel-size} - (#{$gap16} * 7)) / 6)
+  grid-template-columns: repeat(6, minmax(calc((#{$min-screen-size} - #{$panel-size} - (#{$gap16} * 7)) / 6), 292px));
+  grid-template-rows: repeat(1, 520px) repeat(14, 192px);
   grid-template-areas:
   "f1 f1 f2 f2 f3 f3"
   "b1 b1 b2 b2 b3 b3"
@@ -26,6 +29,16 @@
   "b18 b18 b19 b19 b20 b20"
   "b21 b21 b21 b21 b20 b20"
   "b21 b21 b21 b21 b20 b20"
+}
+
+.widgets-area::-webkit-scrollbar {
+  width: 4px;
+  background-color: $widget-area-color;
+}
+
+.widgets-area::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: $menu-color;
 }
 
 

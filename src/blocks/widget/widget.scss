@@ -1,8 +1,23 @@
 @import "../../pages/variables.scss";
 
 .widget {
-  height: 5$icon-size;
+  height: 100%;
   border: 1px solid $border-color;
   border-radius: $border-radius-big;
   background-color: $header-text-color;
+}
+
+.widgets-area__block-f1 {
+  grid-area: f1;
+  border-top: 4px solid $border-top-blue;
+}
+
+.widgets-area__block-f2 {
+  grid-area: f2;
+  border-top: 4px solid $border-top-red;
+}
+
+.widgets-area__block-f3 {
+  grid-area: f3;
+  border-top: 4px solid $support-color;
 }
