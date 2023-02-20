@@ -1,6 +1,10 @@
 @import "../../../pages/variables.scss";
 
 .widget__header-settings-button {
-    width: $small-button-size;
-    height: $small-button-size;
+  width: $small-button-size;
+  height: $small-button-size;
+}
+
+.widget__header-settings-button:active {
+  background-color: $header-text-color;
 }
