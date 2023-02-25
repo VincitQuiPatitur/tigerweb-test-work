@@ -2,7 +2,7 @@
 
 .widget__header-button {
   text-decoration: underline 1px solid $border-top-blue;
-  cursor: pointer;
+  cursor: $cursor-pointer;
   color: $primary-text-color;
   transition: color 0.3s ease-in-out;
 }

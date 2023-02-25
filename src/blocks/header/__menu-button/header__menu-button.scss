@@ -11,11 +11,7 @@
   background: transparent;
   margin-left: 20px;
   padding: 0;
-  cursor: pointer;
-}
-
-.header__menu-button:hover .header__menu-button-dot {
-  border-color: $menu-color;
+  cursor: $cursor-pointer;
 }
 
 .header__menu-button:hover .header__menu-button-dot_type_subheader {

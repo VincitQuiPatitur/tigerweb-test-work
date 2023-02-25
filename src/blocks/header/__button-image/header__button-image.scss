@@ -1,10 +1,10 @@
 @import "../../../pages/variables.scss";
 .header__button-image {
-    background: url('../images/header-button.png') center center no-repeat;
-    background-size: cover;
+    background: url('./../images/header-blue-button.svg') center center no-repeat;
+    background-size: 40px 40px;
     border: none;
     width: $button-size;
     height: $button-size;
-    cursor: pointer;
+    cursor: $cursor-pointer;
     padding: 0;
 }

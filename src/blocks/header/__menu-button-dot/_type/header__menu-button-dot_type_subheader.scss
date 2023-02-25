@@ -1,5 +1,13 @@
 @import "../../../../pages/variables.scss";
 
 .header__menu-button-dot_type_subheader {
-  border-color: $primary-text-color;
+  fill: $primary-text-color;
+}
+
+.subheader__editing-item .header__menu-button-dot_type_subheader:hover {
+  fill: $header-color;
+}
+
+.header__menu-button-dot_type_subheader:active {
+  fill: $menu-color;
 }

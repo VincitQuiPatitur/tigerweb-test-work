@@ -1,8 +1,10 @@
+@import "../../../pages/variables.scss";
+
 .navbar__profile-button {
     width: 100%;
     height: 100%;
     border: none;
     padding: 0;
-    cursor: pointer;
+    cursor: $cursor-pointer;
     background: linear-gradient(0deg, #3A9EFF -251.25%, #ECF6FF 50%);
 }

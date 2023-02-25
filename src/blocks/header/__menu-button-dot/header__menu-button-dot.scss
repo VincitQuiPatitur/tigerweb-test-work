@@ -1,10 +1,10 @@
 @import "../../../pages/variables.scss";
 
 .header__menu-button-dot {
-  border-radius: 50%;
-  border: 2px solid $header-text-color;
-  /*height: 4px;
-  width: 4px;
-  background-color: $header-text-color;*/
-  transition: background-color 0.3s ease 0s;
+  fill: $header-text-color;
+  transition: fill 0.3s ease 0s;
+}
+
+.header__menu-button-dot:hover {
+  fill: $menu-color;
 }

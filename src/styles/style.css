@@ -7,10 +7,9 @@
 @import "../blocks/subheader/__container/subheader__container.css";
 @import "../blocks/subheader/__weather-img/subheader__weather-img.css";
 @import "../blocks/subheader/__editing/subheader__editing.css";
-@import "../blocks/subheader/__question/subheader__question.css";
-@import "../blocks/navbar/__profile-button/navbar__profile-button.css";
 @import "../blocks/navbar/__menu-container/navbar__menu-container.css";
 @import "../blocks/navbar/__menu-icon/navbar__menu-icon.css";
+@import "../blocks/navbar/__menu-icon-counter/navbar__menu-icon-counter.css";
 @import "../blocks/widget/__body/widget__body.css";
 @import "../blocks/widget/__date/widget__date.css";
 @import "../blocks/widget/__button-prompt/_type/widget__button-prompt_type_refresh.css";
@@ -28,6 +27,12 @@
   padding: 0 16px;
   box-sizing: border-box;
   border-bottom: 2px solid #354052;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__button {
@@ -105,7 +110,8 @@
   box-sizing: border-box;
   outline: none;
   background: transparent;
-  margin-left: 32px;
+  margin-left: 20px;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -117,8 +123,13 @@
   border-color: #273142;
 }
 
-.header__menu-button:active {
+.header .header__menu-button:active {
   background-color: #354052;
+  border-radius: 4px;
+}
+
+.subheader__editing-item .header__menu-button:active {
+  background-color: #E9EDF1;
   border-radius: 4px;
 }
 
@@ -203,6 +214,13 @@
   color: #354052;
 }
 
+.subheader__question {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  fill: #FFFFFF;
+}
+
 .subheader__add-button {
   border: none;
   border-radius: 4px;
@@ -232,6 +250,15 @@
 .navbar__user-profile {
   height: 56px;
   width: 100%;
+}
+
+.navbar__profile-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: linear-gradient(0deg, #3A9EFF -251.25%, #ECF6FF 50%);
 }
 
 .navbar__profile-symbol {
@@ -302,6 +329,8 @@
 
 .widgets-area {
   width: calc(100% - 56px);
+  height: calc(100vh - 56px * 2);
+  overflow: auto;
   margin-top: calc(56px * 2);
   padding: 16px;
   box-sizing: border-box;
@@ -309,8 +338,18 @@
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(6, minmax(calc((1280px - 56px - (16px * 7)) / 6), 292px));
-  grid-template-rows: repeat(1, 520px) repeat(14, minmax(auto, 192px));
+  grid-template-rows: repeat(1, 520px) repeat(14, 192px);
   grid-template-areas: "f1 f1 f2 f2 f3 f3" "b1 b1 b2 b2 b3 b3" "b1 b1 b2 b2 b3 b3" "b4 b4 b4 b4 b5 b5" "b4 b4 b4 b4 b5 b5" "b6 b7 b8 b9 b10 b11" "b6 b7 b8 b9 b10 b11" "b12 b12 b13 b14 b14 b14" "b15 b15 b13 b14 b14 b14" "b16 b16 b16 b17 b17 b17" "b16 b16 b16 b17 b17 b17" "b18 b18 b19 b19 b20 b20" "b18 b18 b19 b19 b20 b20" "b21 b21 b21 b21 b20 b20" "b21 b21 b21 b21 b20 b20";
+}
+
+.widgets-area::-webkit-scrollbar {
+  width: 4px;
+  background-color: #EFF3F6;
+}
+
+.widgets-area::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #1F8EFA;
 }
 
 .widgets-area__block {
@@ -402,6 +441,13 @@
   grid-area: b21;
 }
 
+.widget {
+  height: 100%;
+  border: 1px solid #DFE3E9;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
 .widgets-area__block-f1 {
   grid-area: f1;
   border-top: 4px solid #3A9EFF;
@@ -415,13 +461,6 @@
 .widgets-area__block-f3 {
   grid-area: f3;
   border-top: 4px solid #FFB300;
-}
-
-.widget {
-  height: 100%;
-  border: 1px solid #DFE3E9;
-  border-radius: 8px;
-  background-color: #FFFFFF;
 }
 
 .widget__header {
@@ -444,6 +483,10 @@
 .widget__header-settings-button {
   width: 20px;
   height: 20px;
+}
+
+.widget__header-settings-button:active {
+  background-color: #FFFFFF;
 }
 
 .widget__title {
@@ -514,6 +557,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 16px;
+  /*border: 1px solid $border-color;*/
   border-radius: 0 0 8px 8px;
 }
 

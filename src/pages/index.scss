@@ -3,6 +3,7 @@
 
 @import "../blocks/root/root.css";
 @import "../blocks/header/header.scss";
+@import "../blocks/header/__logo/header__logo.scss";
 @import "../blocks/header/__logo-img/header__logo-img.css";
 @import "../blocks/header/__button/header__button.scss";
 @import "../blocks/header/__button-image/header__button-image.scss";
@@ -23,18 +24,19 @@
 @import "../blocks/subheader/__weather-img/subheader__weather-img.css";
 @import "../blocks/subheader/__temperature/subheader__temperature.scss";
 @import "../blocks/subheader/__editing/subheader__editing.css";
-@import "../blocks/subheader/__question/subheader__question.css";
+@import "../blocks/subheader/__question/subheader__question.scss";
 @import "../blocks/subheader/__add-button/subheader__add-button.scss";
 
 @import "../blocks/navbar/navbar";
 @import "../blocks/navbar/__user-profile/navbar__user-profile.scss";
-@import "../blocks/navbar/__profile-button/navbar__profile-button.css";
+@import "../blocks/navbar/__profile-button/navbar__profile-button.scss";
 @import "../blocks/navbar/__profile-symbol/navbar__profile-symbol.scss";
 @import "../blocks/navbar/__menu/navbar__menu.scss";
 @import "../blocks/navbar/__menu-container/navbar__menu-container.css";
 @import "../blocks/navbar/__menu-item/navbar__menu-item.scss";
 @import "../blocks/navbar/__menu-button/navbar__menu-button.scss";
 @import "../blocks/navbar/__menu-icon/navbar__menu-icon.css";
+@import "../blocks/navbar/__menu-icon-counter/navbar__menu-icon-counter.css";
 @import "../blocks/navbar/__menu-support/navbar__menu-support.scss";
 @import "../blocks/navbar/__menu-support-icon/navbar__menu-support-icon.scss";
 

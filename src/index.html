@@ -11,7 +11,7 @@
 <body class="root">
 <header class="header">
     <div class="header__logo">
-        <img src="<%=require('./images/header-logo.png')%>"
+        <img src="<%=require('./images/header-logo.svg')%>"
              alt="Логотип белый силуэт головы тигра на голубом круге и надпись TProjects" class="header__logo-img">
     </div>
     <div class="header__button">
@@ -28,9 +28,9 @@
         </ul>
     </nav>
     <button class="header__menu-button">
-        <div class="header__menu-button-dot"></div>
-        <div class="header__menu-button-dot"></div>
-        <div class="header__menu-button-dot"></div>
+        <svg class="header__menu-button-dot" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+        </svg>
     </button>
 </header>
 
@@ -44,20 +44,20 @@
             <p class="subheader__time"></p>
         </li>
         <li class="subheader__item">
-            <img src="<%=require('./images/weather-img.png')%>" alt="Изображение погоды" class="subheader__weather-img">
+            <img src="<%=require('./images/weather-icon.svg')%>" alt="Изображение погоды" class="subheader__weather-img">
             <p class="subheader__temperature">-8&deg</p>
         </li>
     </ul>
     <ul class="subheader__editing">
         <li class="subheader__editing-item">
             <button class="header__menu-button">
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                </svg>
             </button>
         </li>
         <li class="subheader__editing-item">
-            <img class="subheader__question" src="<%=require('./images/button-question.png')%>"
+            <img class="subheader__question" src="<%=require('./images/button-question.svg')%>"
                  alt="Кнопка в виде вопроса в круге"/></li>
         <li class="subheader__editing-item">
             <button class="subheader__add-button">Добавить</button>
@@ -75,37 +75,38 @@
         <ul class="navbar__menu-container">
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/docs-icon.png')%>" alt="Иконка документов" class="navbar__menu-icon">
+                    <img src="<%=require('./images/document-icon.svg')%>" alt="Иконка документов" class="navbar__menu-icon">
                 </button>
             </li>
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/dialog-icon.png')%>" alt="Иконка сообщения"
+                    <img src="<%=require('./images/message-icon.svg')%>" alt="Иконка сообщения"
                          class="navbar__menu-icon">
+                    <img src="<%=require('./images/counter.svg')%>" alt="Значок непрочитанного сообщения" class="navbar__menu-icon-counter">
                 </button>
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/notification-icon.png')%>" alt="Иконка уведомления"
+                    <img src="<%=require('./images/notification-icon.svg')%>" alt="Иконка уведомления"
                          class="navbar__menu-icon">
+                    <img src="<%=require('./images/counter.svg')%>" alt="Значок непрочитанного сообщения" class="navbar__menu-icon-counter">
                 </button>
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/timer-icon.png')%>" alt="Иконка таймера" class="navbar__menu-icon">
-                </button>
-            </li>
-            <li class="navbar__menu-item">
-                <button class="navbar__menu-button">
-                    <img src="<%=require('./images/book-icon.png')%>" alt="Иконка книги" class="navbar__menu-icon">
+                    <img src="<%=require('./images/timer-icon.svg')%>" alt="Иконка таймера" class="navbar__menu-icon">
                 </button>
             </li>
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/settings-icon.png')%>" alt="Иконка настроек"
+                    <img src="<%=require('./images/book-icon.svg')%>" alt="Иконка книги" class="navbar__menu-icon">
+                </button>
+            </li>
+            <li class="navbar__menu-item">
+                <button class="navbar__menu-button">
+                    <img src="<%=require('./images/settings-icon.svg')%>" alt="Иконка настроек"
                          class="navbar__menu-icon">
                 </button>
             </li>
         </ul>
         <button class="navbar__menu-support">
-            <img src="<%=require('./images/support-icon.png')%>" alt="Иконка настроек"
-                 class="navbar__menu-support-icon">
+            <img class="navbar__menu-support-icon" src="<%=require('./images/support-icon.svg')%>" alt="Жёлтая кнопка с белым вопросительным знаком в круге">
         </button>
     </section>
 </aside>
@@ -121,9 +122,9 @@
                 <p class="widget__calendar widget__header-button">08.01.22 - 15.01.22</p>
             </div>
             <button class="header__menu-button widget__header-settings-button">
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                </svg>
             </button>
         </div>
         <div class="widget__body"></div>
@@ -133,12 +134,12 @@
             </div>
             <div class="widget__buttons">
                 <button class="widget__button-item">
-                    <img src="<%=require('./images/button-refresh.png')%>"
+                    <img src="<%=require('./images/button-refresh.svg')%>"
                          alt="Кнопка обновления данных" class="widget__button-icon">
                     <span class="widget__button-prompt widget__button-prompt_type_refresh">Обновить&nbsp;данные</span>
                 </button>
                 <button class="widget__button-item">
-                    <img src="<%=require('./images/button-stretch.png')%>"
+                    <img src="<%=require('./images/button-stretch.svg')%>"
                          alt="Кнопка растяжения" class="widget__button-icon">
                     <span class="widget__button-prompt widget__button-prompt_type_stretch">Растянуть</span>
                 </button>
@@ -155,9 +156,9 @@
                 <p class="widget__calendar widget__header-button">08.01.22 - 15.01.22</p>
             </div>
             <button class="header__menu-button widget__header-settings-button">
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                </svg>
             </button>
         </div>
         <div class="widget__body"></div>
@@ -167,12 +168,12 @@
             </div>
             <div class="widget__buttons">
                 <button class="widget__button-item">
-                    <img src="<%=require('./images/button-refresh.png')%>"
+                    <img src="<%=require('./images/button-refresh.svg')%>"
                          alt="Кнопка обновления данных" class="widget__button-icon">
                     <span class="widget__button-prompt widget__button-prompt_type_refresh">Обновить&nbsp;данные</span>
                 </button>
                 <button class="widget__button-item">
-                    <img src="<%=require('./images/button-stretch.png')%>"
+                    <img src="<%=require('./images/button-stretch.svg')%>"
                          alt="Кнопка растяжения" class="widget__button-icon">
                     <span class="widget__button-prompt widget__button-prompt_type_stretch">Растянуть</span>
                 </button>
@@ -188,9 +189,9 @@
                 <p class="widget__menu">Фильтр не выбран</p>
             </div>
             <button class="header__menu-button widget__header-settings-button">
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
-                <div class="header__menu-button-dot header__menu-button-dot_type_subheader"></div>
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                </svg>
             </button>
         </div>
         <div class="widget__body"></div>
@@ -202,12 +203,12 @@
             </div>
             <div class="widget__buttons">
                 <button class="widget__button-item">
-                    <img src="<%=require('./images/button-refresh.png')%>"
+                    <img src="<%=require('./images/button-refresh.svg')%>"
                          alt="Кнопка обновления данных" class="widget__button-icon">
                     <span class="widget__button-prompt widget__button-prompt_type_refresh">Обновить&nbsp;данные</span>
                 </button>
                 <button class="widget__button-item">
-                    <img src="<%=require('./images/button-stretch.png')%>"
+                    <img src="<%=require('./images/button-stretch.svg')%>"
                          alt="Кнопка растяжения" class="widget__button-icon">
                     <span class="widget__button-prompt widget__button-prompt_type_stretch">Растянуть</span>
                 </button>
