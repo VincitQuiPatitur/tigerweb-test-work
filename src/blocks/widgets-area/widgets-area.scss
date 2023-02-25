@@ -2,7 +2,7 @@
 
 .widgets-area {
   width: calc(100% - #{$panel-size});
-  height: calc(100vh - #{$panel-size} * 2);
+  height: calc(100vh - #{$panel-size} * 2 - #{$footer-height});
   overflow: auto;
   margin-top: calc(#{$panel-size} * 2);
   padding: 16px;
