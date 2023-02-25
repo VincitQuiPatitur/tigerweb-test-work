@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.subheader-popup__container {
+    padding: 0 $gap16;
+    margin: 0;
+    display: flex;
+    @include flexible-center;
+    list-style: none;
+}

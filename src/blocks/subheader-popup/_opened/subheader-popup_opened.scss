@@ -1,0 +1,14 @@
+@import "../../../pages/variables.scss";
+
+.subheader-popup_opened {
+    position: fixed;
+    visibility: visible;
+    top: calc(#{$panel-size} * 2);
+    height: $panel-size;
+    width: calc(100% - #{$panel-size});
+    background-color: $header-text-color;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

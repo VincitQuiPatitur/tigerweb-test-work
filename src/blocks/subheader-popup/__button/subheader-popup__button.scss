@@ -1,0 +1,15 @@
+@import "../../../pages/variables.scss";
+
+.subheader-popup__button {
+  text-transform: uppercase;
+  @include phone-font;
+  font-weight: $bold-font-weight;
+  padding: 11px;
+  color: $card-header-text-color;
+  cursor: $cursor-pointer;
+  transition: color .3s ease-in-out;
+}
+
+.subheader-popup__button:hover {
+  color: $menu-color;
+}

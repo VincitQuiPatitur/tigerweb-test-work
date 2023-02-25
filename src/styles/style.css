@@ -661,4 +661,49 @@
   border-right: 1px solid #DFE3E9;
 }
 
+.subheader-popup {
+  position: fixed;
+  top: calc(56px * 2);
+  height: 56px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DFE3E9;
+}
+
+.subheader-popup__container {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.subheader-popup__button {
+  text-transform: uppercase;
+  font-family: "Golos UI", serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  padding: 11px;
+  color: #516173;
+}
+
+.subheader-popup__button_type_active {
+  background-color: #1F8EFA;
+  color: #FFFFFF;
+}
+
+.subheader-popup_opened {
+  position: fixed;
+  visibility: visible;
+  top: calc(56px * 2);
+  height: 56px;
+  width: calc(100% - 56px);
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DFE3E9;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

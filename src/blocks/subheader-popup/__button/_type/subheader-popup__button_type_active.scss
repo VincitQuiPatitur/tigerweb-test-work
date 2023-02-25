@@ -1,0 +1,11 @@
+@import "../../../../pages/variables.scss";
+
+.subheader-popup__button_type_active {
+    background-color: $menu-color;
+    color: $header-text-color;
+    border-radius: $border-radius-small;
+}
+
+.subheader-popup__button_type_active:hover {
+    color: $header-text-color;
+}

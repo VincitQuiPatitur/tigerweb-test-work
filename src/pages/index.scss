@@ -70,4 +70,10 @@
 @import "../blocks/footer/__company-credits/footer__company-credits.scss";
 @import "../blocks/footer/__app-version/footer__app-version.css";
 
+@import "../blocks/subheader-popup/subheader-popup.scss";
+@import "../blocks/subheader-popup/__container/subheader-popup__container.scss";
+@import "../blocks/subheader-popup/__button/subheader-popup__button.scss";
+@import "../blocks/subheader-popup/__button/_type/subheader-popup__button_type_active.scss";
+@import "../blocks/subheader-popup/_opened/subheader-popup_opened.scss";
+
 
