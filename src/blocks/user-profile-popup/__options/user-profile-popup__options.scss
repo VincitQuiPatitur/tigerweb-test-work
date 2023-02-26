@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__options {
+  padding: $gap8 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}

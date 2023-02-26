@@ -18,6 +18,14 @@ $main-font-weight: 500;
 $bold-font-weight: 700;
 $light-font-weight: 400;
 
+@mixin timer-font {
+  font: {
+    family: $font;
+    size: 18px;
+  }
+  line-height: 21px;
+}
+
 @mixin header-text {
   font: {
     family: $font;
@@ -68,6 +76,11 @@ $light-font-weight: 400;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin hidden-element {
+  visibility: hidden;
+  display: none;
 }
 
 $panel-size: 56px;

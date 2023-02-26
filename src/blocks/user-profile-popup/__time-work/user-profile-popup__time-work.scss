@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__time-work {
+  margin: 0;
+  @include timer-font;
+  font-weight: $light-font-weight;
+  color: $card-header-text-color;
+}

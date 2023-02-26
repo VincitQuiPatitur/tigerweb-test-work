@@ -1,0 +1,14 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup_opened {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    right: $panel-size;
+    background-color: $header-text-color;
+    box-shadow: 0 7px 10px rgba(27, 36, 49, 0.15), 0 3px 13px rgba(27, 36, 49, 0.05);
+    border-radius: 8px 0 0 8px;
+}

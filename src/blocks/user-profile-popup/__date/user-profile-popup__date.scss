@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__date {
+  height: 36px;
+  padding: 0 $gap8;
+  @include flexible-center;
+  gap: $gap8;
+  @include header-text;
+  font-weight: $bold-font-weight;
+}

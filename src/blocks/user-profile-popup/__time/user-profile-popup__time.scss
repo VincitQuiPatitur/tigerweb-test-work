@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__time {
+  height: 36px;
+  @include flexible-center;
+  gap: $border-radius-small;
+  border-right: 1px solid $border-color;
+  padding: 0 $gap8 0 $gap16;
+}

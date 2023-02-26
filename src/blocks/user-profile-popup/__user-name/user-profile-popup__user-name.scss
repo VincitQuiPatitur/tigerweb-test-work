@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__user-name {
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  @include info-text;
+  font-weight: $bold-font-weight;
+  color: $primary-text-color;
+}

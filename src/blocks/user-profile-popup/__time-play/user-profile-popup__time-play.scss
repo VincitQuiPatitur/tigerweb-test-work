@@ -1,0 +1,11 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__time-play {
+  border-radius: 50%;
+  background-color: $menu-color;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  @include flexible-center;
+}

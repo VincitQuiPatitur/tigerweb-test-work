@@ -28,8 +28,10 @@
         </ul>
     </nav>
     <button class="header__menu-button">
-        <svg class="header__menu-button-dot" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+        <svg class="header__menu-button-dot" width="24" height="24" viewBox="0 0 24 25"
+             xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z"/>
         </svg>
     </button>
 </header>
@@ -39,20 +41,23 @@
         <li class="subheader__item">
             <p class="subheader__link-label">Работа с задачами</p>
         </li>
-        <li class="subheader__item">
-            <p class="subheader__day-of-week"></p>
-            <p class="subheader__time"></p>
+        <li class="subheader__item" id="time">
+            <!--<p class="subheader__day-of-week"></p>
+            <p class="subheader__time"></p>-->
         </li>
         <li class="subheader__item">
-            <img src="<%=require('./images/weather-icon.svg')%>" alt="Изображение погоды" class="subheader__weather-img">
+            <img src="<%=require('./images/weather-icon.svg')%>" alt="Изображение погоды"
+                 class="subheader__weather-img">
             <p class="subheader__temperature">-8&deg</p>
         </li>
     </ul>
     <ul class="subheader__editing">
         <li class="subheader__editing-item">
             <button class="header__menu-button">
-                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24"
+                     viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z"/>
                 </svg>
             </button>
         </li>
@@ -75,19 +80,22 @@
         <ul class="navbar__menu-container">
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
-                    <img src="<%=require('./images/document-icon.svg')%>" alt="Иконка документов" class="navbar__menu-icon">
+                    <img src="<%=require('./images/document-icon.svg')%>" alt="Иконка документов"
+                         class="navbar__menu-icon">
                 </button>
             </li>
             <li class="navbar__menu-item">
                 <button class="navbar__menu-button">
                     <img src="<%=require('./images/message-icon.svg')%>" alt="Иконка сообщения"
                          class="navbar__menu-icon">
-                    <img src="<%=require('./images/counter.svg')%>" alt="Значок непрочитанного сообщения" class="navbar__menu-icon-counter">
+                    <img src="<%=require('./images/counter.svg')%>" alt="Значок непрочитанного сообщения"
+                         class="navbar__menu-icon-counter">
                 </button>
                 <button class="navbar__menu-button">
                     <img src="<%=require('./images/notification-icon.svg')%>" alt="Иконка уведомления"
                          class="navbar__menu-icon">
-                    <img src="<%=require('./images/counter.svg')%>" alt="Значок непрочитанного сообщения" class="navbar__menu-icon-counter">
+                    <img src="<%=require('./images/counter.svg')%>" alt="Значок непрочитанного сообщения"
+                         class="navbar__menu-icon-counter">
                 </button>
                 <button class="navbar__menu-button">
                     <img src="<%=require('./images/timer-icon.svg')%>" alt="Иконка таймера" class="navbar__menu-icon">
@@ -106,7 +114,8 @@
             </li>
         </ul>
         <button class="navbar__menu-support">
-            <img class="navbar__menu-support-icon" src="<%=require('./images/support-icon.svg')%>" alt="Жёлтая кнопка с белым вопросительным знаком в круге">
+            <img class="navbar__menu-support-icon" src="<%=require('./images/support-icon.svg')%>"
+                 alt="Жёлтая кнопка с белым вопросительным знаком в круге">
         </button>
     </section>
 </aside>
@@ -122,8 +131,10 @@
                 <p class="widget__calendar widget__header-button">08.01.22 - 15.01.22</p>
             </div>
             <button class="header__menu-button widget__header-settings-button">
-                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24"
+                     viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z"/>
                 </svg>
             </button>
         </div>
@@ -156,8 +167,10 @@
                 <p class="widget__calendar widget__header-button">08.01.22 - 15.01.22</p>
             </div>
             <button class="header__menu-button widget__header-settings-button">
-                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24"
+                     viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z"/>
                 </svg>
             </button>
         </div>
@@ -189,8 +202,10 @@
                 <p class="widget__menu">Фильтр не выбран</p>
             </div>
             <button class="header__menu-button widget__header-settings-button">
-                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z" />
+                <svg class="header__menu-button-dot header__menu-button-dot_type_subheader" width="24" height="24"
+                     viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5 10.0015C3.89543 10.0015 3 10.8969 3 12.0015C3 13.1061 3.89543 14.0015 5 14.0015C6.10457 14.0015 7 13.1061 7 12.0015C7 10.8969 6.10457 10.0015 5 10.0015ZM10 12.0015C10 10.8969 10.8954 10.0015 12 10.0015C13.1046 10.0015 14 10.8969 14 12.0015C14 13.1061 13.1046 14.0015 12 14.0015C10.8954 14.0015 10 13.1061 10 12.0015ZM17 12.0015C17 10.8969 17.8954 10.0015 19 10.0015C20.1046 10.0015 21 10.8969 21 12.0015C21 13.1061 20.1046 14.0015 19 14.0015C17.8954 14.0015 17 13.1061 17 12.0015Z"/>
                 </svg>
             </button>
         </div>
@@ -243,11 +258,34 @@
         <p class="footer__app-version">v. 0.0.1</p>
     </div>
 </footer>
+
 <div class="subheader-popup">
     <ul class="subheader-popup__container">
         <li class="subheader-popup__button subheader-popup__button_type_active">работа с задачами</li>
         <li class="subheader-popup__button">Счета и платежи</li>
         <li class="subheader-popup__button">Показатели продаж</li>
+    </ul>
+</div>
+
+<div class="user-profile-popup">
+    <div class="user-profile-popup__header">
+        <p class="user-profile-popup__user-name">Владимир</p>
+        <p class="user-profile-popup__user-job">Дизайнер</p>
+        <img class="user-profile-popup__status" src="<%=require('./images/status-online.svg')%>">
+    </div>
+    <div class="user-profile-popup__time-container">
+        <div class="user-profile-popup__time">
+            <p class="user-profile-popup__time-work">00:00:00</p>
+            <button class="user-profile-popup__time-play"><img src="<%=require('./images/play-icon.svg')%>" alt="Кнопка воспроизведения таймера"></button>
+        </div>
+        <div class="user-profile-popup__date" id="time1">
+            <p class="subheader__day-of-week">Пт</p>
+            <p class="subheader__time">18:01</p>
+        </div>
+    </div>
+    <ul class="user-profile-popup__options">
+        <li class="user-profile-popup__option"><img src="<%=require('./images/user-profile-icon.svg')%>" alt="Иконка силуэта человека" class="user-profile-popup__option-icon"><p class="user-profile-popup__option-text">Мой профиль</p></li>
+        <li class="user-profile-popup__option"><img src="<%=require('./images/user-profile-exit-icon.svg')%>" alt="Иконка двери со стрелкой" class="user-profile-popup__option-icon"><p class="user-profile-popup__option-text">Выйти из системы</p></li>
     </ul>
 </div>
 </body>

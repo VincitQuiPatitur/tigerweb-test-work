@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.user-profile-popup__time-container {
+  background-color: $widget-area-color;
+  display: flex;
+  align-items: center;
+  height: $panel-size;
+}

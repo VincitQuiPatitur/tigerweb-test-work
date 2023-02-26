@@ -7,12 +7,23 @@ let now = date.getDay();
 
 //test
 
-const dateParagraph = document.querySelector('.subheader__day-of-week');
-const timeParagraph = document.querySelector('.subheader__time');
+//const dateParagraph = document.querySelector('.subheader__day-of-week');
+//const timeParagraph = document.querySelector('.subheader__time');
 
-dateParagraph.textContent = days[now];
-timeParagraph.textContent = `${date.getHours()}:${ date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}`;
+const timeBlock = document.querySelector('#time1');
+const timeBlock2 = document.querySelector('#time');
 
+
+const dateElement = document.createElement('p');
+dateElement.className = 'subheader__day-of-week';
+
+const timeElement = document.createElement('p');
+timeElement.className = 'subheader__time';
+
+dateElement.innerHTML = days[now];
+timeElement.innerHTML = `${date.getHours()}:${ date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()}`;
+
+timeBlock2.append(dateElement, timeElement);
 /*
 
 const widgetInfo = {
