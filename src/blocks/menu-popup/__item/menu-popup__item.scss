@@ -4,6 +4,8 @@
   padding: 10px $gap16;
   cursor: pointer;
   transition: background-color .2s ease-in-out 0s, color .2s ease-in-out 0s;
+  display: flex;
+  align-items: center;
 }
 
 .menu-popup__item:hover {

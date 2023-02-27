@@ -15,16 +15,14 @@
 @import "../blocks/header/__menu-button-dot/header__menu-button-dot.scss";
 @import "../blocks/header/__menu-button-dot/_type/header__menu-button-dot_type_subheader.scss";
 @import "../blocks/header/__menu-button-container/header__menu-button-container.scss";
-@import "../blocks/header-popup/header-popup.scss";
 
 @import "../blocks/menu-popup/menu-popup.scss";
 @import "../blocks/menu-popup/_opened/menu-popup_opened";
 @import "../blocks/menu-popup/__container/menu-popup__container.scss";
 @import "../blocks/menu-popup/__item/menu-popup__item.scss";
 @import "../blocks/menu-popup/__bottom-container/menu-popup__bottom-container.scss";
-@import "../blocks/menu-popup/__settings/menu-popup__settings.scss";
-@import "../blocks/menu-popup/__settings-icon/menu-popup__settings-icon.scss";
-@import "../blocks/menu-popup/__settings-text/menu-popup__settings-text.scss";
+@import "../blocks/menu-popup/__item-icon/menu-popup__item-icon.scss";
+@import "../blocks/menu-popup/__item-text/menu-popup__item-text.scss";
 
 @import "../blocks/subheader/subheader.scss";
 @import "../blocks/subheader/__container/subheader__container.css";
@@ -35,6 +33,7 @@
 @import "../blocks/subheader/__weather-img/subheader__weather-img.css";
 @import "../blocks/subheader/__temperature/subheader__temperature.scss";
 @import "../blocks/subheader/__editing/subheader__editing.css";
+@import "../blocks/subheader/__editing-item/subheader__editing-item.scss";
 @import "../blocks/subheader/__question/subheader__question.scss";
 @import "../blocks/subheader/__add-button/subheader__add-button.scss";
 

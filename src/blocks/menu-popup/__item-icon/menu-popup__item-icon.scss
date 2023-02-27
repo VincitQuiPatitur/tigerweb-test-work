@@ -1,11 +1,11 @@
 @import "../../../pages/variables.scss";
 
-.menu-popup__settings-icon {
+.menu-popup__item-icon {
   margin-right: 6px;
   fill: $optional-text-color;
   transition: .2s ease-in-out 0s;
 }
 
-.menu-popup__settings:hover .menu-popup__settings-icon {
+.menu-popup__item:hover .menu-popup__item-icon {
   fill: $menu-color;
 }

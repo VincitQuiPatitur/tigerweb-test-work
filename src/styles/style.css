@@ -151,11 +151,6 @@
   position: relative;
 }
 
-.header-popup {
-  top: 46px;
-  right: 0;
-}
-
 .menu-popup {
   visibility: hidden;
   display: none;
@@ -202,29 +197,17 @@
   border-top: 2px solid #DFE3E9;
 }
 
-.menu-popup__settings {
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
-}
-
-.menu-popup__settings:hover {
-  background-color: #ECF6FF;
-  color: #1F8EFA;
-}
-
-.menu-popup__settings-icon {
+.menu-popup__item-icon {
   margin-right: 6px;
   fill: #7F8FA4;
   transition: 0.2s ease-in-out 0s;
 }
 
-.menu-popup__settings:hover .menu-popup__settings-icon {
+.menu-popup__settings:hover .menu-popup__item-icon {
   fill: #1F8EFA;
 }
 
-.menu-popup__settings-text {
+.menu-popup__item-text {
   margin: 0;
 }
 
@@ -294,6 +277,10 @@
 .subheader__temperature {
   margin: 0;
   color: #354052;
+}
+
+.subheader__editing-item {
+  position: relative;
 }
 
 .subheader__question {
