@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.menu-popup__container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: $gap8 0;
+}

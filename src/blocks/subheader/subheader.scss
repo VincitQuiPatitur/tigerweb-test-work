@@ -12,4 +12,5 @@
   @include flexible-space-between;
   @include header-text;
   font-weight: $bold-font-weight;
+  z-index: 3;
 }

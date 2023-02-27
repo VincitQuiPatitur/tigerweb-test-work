@@ -1,16 +1,16 @@
 @import "../../pages/variables.scss";
 
 .footer {
-    height: $footer-height;
-    width: calc(100% - #{$panel-size});
-    background-color: $button-background;
-    color: $optional-text-color;
-    @include mail-font;
-    font-weight: $light-font-weight;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  height: $footer-height;
+  width: calc(100% - #{$panel-size});
+  background-color: $button-background;
+  color: $optional-text-color;
+  @include mail-font;
+  font-weight: $light-font-weight;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }

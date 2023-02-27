@@ -1,0 +1,17 @@
+@import "../../../pages/variables.scss";
+
+.menu-popup_opened {
+  background-color: $header-text-color;
+  width: 200px;
+  border: 1px solid $border-color;
+  box-shadow: 0 13px 20px rgba(27, 36, 49, 0.15), 0 5px 27px rgba(27, 36, 49, 0.05);
+  border-radius: $border-radius-small;
+  visibility: visible;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 7;
+  color: $primary-text-color;
+  @include info-text;
+  font-weight: $main-font-weight;
+}

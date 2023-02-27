@@ -1,0 +1,12 @@
+@import "../../../pages/variables.scss";
+
+.menu-popup__item {
+  padding: 10px $gap16;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out 0s, color .2s ease-in-out 0s;
+}
+
+.menu-popup__item:hover {
+  background-color: $menu-item-background;
+  color: $menu-color;
+}
