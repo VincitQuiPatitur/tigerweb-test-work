@@ -1,7 +1,7 @@
 @import "../../../pages/variables.scss";
 
 .subheader-popup__container {
-  padding: 0 $gap16;
+  padding: 0;
   margin: 0;
   display: flex;
   @include flexible-center;

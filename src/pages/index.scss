@@ -63,6 +63,7 @@
 @import "../blocks/widget/__menu/widget__menu";
 @import "../blocks/widget/__calendar/widget__calendar.scss";
 @import "../blocks/widget/__header-button/widget__header-button.scss";
+@import "../blocks/widget/__popup/widget__popup.scss";
 @import "../blocks/widget/__body/widget__body.css";
 @import "../blocks/widget/__footer/widget__footer.scss";
 @import "../blocks/widget/__info/widget__info.scss";
@@ -84,6 +85,7 @@
 @import "../blocks/subheader-popup/__container/subheader-popup__container.scss";
 @import "../blocks/subheader-popup/__button/subheader-popup__button.scss";
 @import "../blocks/subheader-popup/__button/_type/subheader-popup__button_type_active.scss";
+@import "../blocks/subheader-popup/__blocking-button/subheader-popup__blocking-button.scss";
 @import "../blocks/subheader-popup/_opened/subheader-popup_opened.scss";
 
 @import "../blocks/user-profile-popup/user-profile-popup.scss";

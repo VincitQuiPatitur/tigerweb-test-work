@@ -617,6 +617,11 @@
   color: #0085F0;
 }
 
+.widget__popup {
+  width: 88px;
+  left: 0;
+}
+
 .widget__footer {
   height: 52px;
   box-sizing: border-box;
