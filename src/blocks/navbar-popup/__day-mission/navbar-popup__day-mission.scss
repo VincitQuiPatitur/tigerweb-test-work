@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__day-mission {
+  color: $primary-text-color;
+  @include mail-font;
+  font-weight: $main-font-weight;
+  text-decoration: underline 1px solid $optional-text-color;
+  margin: 0;
+}

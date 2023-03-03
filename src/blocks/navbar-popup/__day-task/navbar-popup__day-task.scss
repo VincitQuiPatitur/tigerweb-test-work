@@ -1,0 +1,15 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__day-task {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
+  gap: $border-radius-small 0;
+  padding: $gap16 0;
+  border-bottom: 1px solid $border-color;
+  align-items: center;
+}
+
+.navbar-popup__day-task:last-child {
+  border-bottom: none;
+}

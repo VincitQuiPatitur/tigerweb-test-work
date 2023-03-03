@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__header-title {
+  grid-column: 1 / 2;
+  color: $header-color;
+  @include title-font;
+  font-weight: $main-font-weight;
+  margin: 0;
+  padding-bottom: 19px;
+}

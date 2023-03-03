@@ -28,6 +28,7 @@
   padding: 0 16px;
   box-sizing: border-box;
   border-bottom: 2px solid #354052;
+  z-index: 5;
 }
 
 .header__logo {
@@ -44,8 +45,8 @@
 }
 
 .header__button-image {
-  background: url("../images/header-button.png") center center no-repeat;
-  background-size: cover;
+  background: url("./../images/header-blue-button.svg") center center no-repeat;
+  background-size: 40px 40px;
   border: none;
   width: 40px;
   height: 40px;
@@ -116,10 +117,6 @@
   cursor: pointer;
 }
 
-.header__menu-button:hover .header__menu-button-dot {
-  border-color: #1F8EFA;
-}
-
 .header__menu-button:hover .header__menu-button-dot_type_subheader {
   border-color: #273142;
 }
@@ -135,16 +132,24 @@
 }
 
 .header__menu-button-dot {
-  border-radius: 50%;
-  border: 2px solid #FFFFFF;
-  /*height: 4px;
-  width: 4px;
-  background-color: $header-text-color;*/
-  transition: background-color 0.3s ease 0s;
+  fill: #FFFFFF;
+  transition: fill 0.3s ease 0s;
+}
+
+.header__menu-button-dot:hover {
+  fill: #1F8EFA;
 }
 
 .header__menu-button-dot_type_subheader {
-  border-color: #354052;
+  fill: #354052;
+}
+
+.subheader__editing-item .header__menu-button-dot_type_subheader:hover {
+  fill: #273142;
+}
+
+.subheader__editing-item .header__menu-button:active .header__menu-button-dot_type_subheader {
+  fill: #1F8EFA;
 }
 
 .header__menu-button-container {
@@ -164,13 +169,16 @@
   border-radius: 4px;
   visibility: visible;
   position: absolute;
+  right: 0;
+  margin-top: 6px;
   display: flex;
   flex-direction: column;
-}
-
-.menu-popup__container {
-  display: flex;
-  flex-direction: column;
+  z-index: 7;
+  color: #354052;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .menu-popup__container {
@@ -185,6 +193,8 @@
   padding: 10px 16px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s;
+  display: flex;
+  align-items: center;
 }
 
 .menu-popup__item:hover {
@@ -203,7 +213,7 @@
   transition: 0.2s ease-in-out 0s;
 }
 
-.menu-popup__settings:hover .menu-popup__item-icon {
+.menu-popup__item:hover .menu-popup__item-icon {
   fill: #1F8EFA;
 }
 
@@ -227,6 +237,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  z-index: 3;
 }
 
 .subheader__item {
@@ -284,10 +295,7 @@
 }
 
 .subheader__question {
-  height: 24px;
-  width: 24px;
   cursor: pointer;
-  fill: #FFFFFF;
 }
 
 .subheader__add-button {
@@ -375,6 +383,7 @@
   outline: none;
   background: transparent;
   cursor: pointer;
+  position: relative;
 }
 
 .navbar__menu-support {
@@ -393,12 +402,255 @@
 }
 
 .navbar__menu-support-icon {
+  cursor: pointer;
+}
+
+.navbar-popup {
+  visibility: hidden;
+  display: none;
+}
+
+.navbar-popup_opened {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  right: 56px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  box-shadow: 0 7px 10px rgba(27, 36, 49, 0.15), 0 3px 13px rgba(27, 36, 49, 0.05);
+  border-radius: 16px 0 0 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar-popup__header {
+  width: 360px;
+  background-color: #EFF3F6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  padding: 19px 16px 0 16px;
+  box-sizing: border-box;
+  border-radius: 16px 0 0 0;
+  border-bottom: 2px solid #DFE3E9;
+}
+
+.navbar-popup__header-title {
+  grid-column: 1/2;
+  color: #273142;
+  font-family: "Golos UI", serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 19px;
+}
+
+.navbar-popup__header-close-button {
+  grid-column: 2/3;
+  margin: 0 0 0 auto;
   width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-popup__header-close-button-icon {
+  fill: #516173;
+  transition: fill 0.3s ease-in-out 0s;
+}
+
+.navbar-popup__header-close-button:hover .navbar-popup__header-close-button-icon {
+  fill: #3A9EFF;
+}
+
+.navbar-popup__header-tab-container {
+  grid-column: 1/3;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #516173;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  gap: 16px;
+}
+
+.navbar-popup__header-tab-item {
+  padding: 10px 0 10px;
+  position: relative;
+}
+
+.navbar-popup__header-tab-item_active:after {
+  content: "";
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #1F8EFA;
+}
+
+.navbar-popup__header-tab-container .navbar-popup__header-tab-item_active {
+  color: #354052;
+}
+
+.navbar-popup__search-block {
+  width: 360px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.navbar-popup__search-form {
+  width: 100%;
+}
+
+.navbar-popup__form-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #DFE3E9;
+  border-radius: 4px;
+  outline: none;
+  color: #516173;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.navbar-popup__form-input::placeholder {
+  color: #7F8FA4;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.navbar-popup__options {
+  width: 360px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.navbar-popup__days-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-popup__day-divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-popup__day {
+  margin: 0;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C2CAD4;
+}
+
+.navbar-popup__divider {
+  height: 1px;
+  background-color: #DFE3E9;
+  width: 100%;
+}
+
+.navbar-popup__day-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-popup__day-task {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4px 0;
+  padding: 16px 0;
+}
+
+.navbar-popup__day-title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-popup__day-title {
+  color: #354052;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.navbar-popup__day-task-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.navbar-popup__day-status {
+  margin: 0;
+  padding: 2px 4px;
+  color: #1F8EFA;
+  background-color: #ECF6FF;
+  border-radius: 3px;
+  font-family: "Golos UI", serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.navbar-popup__day-status_active {
+  color: #1F8EFA;
+  background-color: #ECF6FF;
+}
+
+.navbar-popup__day-mission {
+  color: #354052;
+  font-family: "Golos UI", serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: underline 1px solid #7F8FA4;
+  margin: 0;
+}
+
+.navbar-popup__task-date {
+  color: #FF3031;
+  font-family: "Golos UI", serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  margin: 0 0 0 auto;
 }
 
 .widgets-area {
   width: calc(100% - 56px);
-  height: calc(100vh - 56px * 2);
+  height: calc(100vh - 56px * 2 - 28px);
   overflow: auto;
   margin-top: calc(56px * 2);
   padding: 16px;
@@ -720,12 +972,19 @@
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .footer__credits {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 8px;
 }
 
 .footer__company-credits {
@@ -735,20 +994,18 @@
 }
 
 .subheader-popup {
-  position: fixed;
-  top: calc(56px * 2);
-  height: 56px;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #DFE3E9;
+  visibility: hidden;
+  display: none;
 }
 
 .subheader-popup__container {
+  padding: 0;
+  margin: 0;
   display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  text-transform: uppercase;
 }
 
 .subheader-popup__button {
@@ -759,11 +1016,31 @@
   font-weight: 700;
   padding: 11px;
   color: #516173;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.subheader-popup__button:hover {
+  color: #1F8EFA;
 }
 
 .subheader-popup__button_type_active {
   background-color: #1F8EFA;
   color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.subheader-popup__button_type_active:hover {
+  color: #FFFFFF;
+}
+
+.subheader-popup__blocking-button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  height: 24px;
 }
 
 .subheader-popup_opened {
@@ -775,8 +1052,15 @@
   background-color: #FFFFFF;
   border-bottom: 1px solid #DFE3E9;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.user-profile-popup {
+  visibility: hidden;
+  display: none;
 }
 
 .user-profile-popup_opened {
@@ -798,16 +1082,29 @@
   grid-template-rows: repeat(2, auto);
   padding: 12px 16px;
   border-bottom: 2px solid #DFE3E9;
+  align-items: center;
 }
 
 .user-profile-popup__user-name {
   margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #354052;
 }
 
 .user-profile-popup__user-job {
   margin: 0;
   grid-column-start: 1;
   grid-column-end: 2;
+  font-family: "Golos UI", serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #7F8FA4;
 }
 
 .user-profile-popup__status {
@@ -818,13 +1115,9 @@
 
 .user-profile-popup__time-container {
   background-color: #EFF3F6;
-  font-family: "Golos UI", serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
   display: flex;
-  justify-content: center;
   align-items: center;
+  height: 56px;
 }
 
 .user-profile-popup__time {
@@ -832,10 +1125,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
   border-right: 1px solid #DFE3E9;
+  padding: 0 8px 0 16px;
 }
 
 .user-profile-popup__time-work {
+  margin: 0;
   font-family: "Golos UI", serif;
   font-size: 18px;
   line-height: 21px;
@@ -848,30 +1144,51 @@
   background-color: #1F8EFA;
   width: 24px;
   height: 24px;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-profile-popup__date {
+  height: 36px;
   padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   font-family: "Golos UI", serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
 }
 
+.user-profile-popup__options {
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
 .user-profile-popup__option {
-  font-family: "Golos UI", serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
   padding: 10px 16px;
+  display: flex;
+  align-items: center;
 }
 
 .user-profile-popup__option-icon {
-  mergin-rigth: 8px;
+  margin-right: 8px;
 }
 
 .user-profile-popup__option-text {
   margin: 0;
+  font-family: "Golos UI", serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #354052;
 }
 
 /*# sourceMappingURL=style.css.map */

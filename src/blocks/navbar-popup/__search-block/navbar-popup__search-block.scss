@@ -1,0 +1,9 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__search-block {
+  width: 100%;
+  background-color: $header-text-color;
+  @include flexible-center;
+  padding: $gap16;
+  box-sizing: border-box;
+}

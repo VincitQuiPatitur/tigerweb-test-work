@@ -1,0 +1,7 @@
+@import "../../../pages/variables.scss";
+.navbar-popup__day-title {
+  color: $primary-text-color;
+  @include info-text;
+  font-weight: $main-font-weight;
+  margin: 0;
+}

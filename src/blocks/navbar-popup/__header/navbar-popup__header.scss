@@ -1,0 +1,13 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__header {
+  width: 100%;
+  background-color: $widget-area-color;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  padding: 19px 16px 0 16px;
+  box-sizing: border-box;
+  border-radius: $gap16 0 0 0;
+  border-bottom: 2px solid $border-color;
+}

@@ -13,11 +13,20 @@ $widget-area-color: #EFF3F6;
 $header-text-color: #FFFFFF;
 $support-color: #FFB300;
 $border-top-red: #E91E63;
+$task-color-red: #FF3031;
 
 $font: 'Golos UI', serif;
 $main-font-weight: 500;
 $bold-font-weight: 700;
 $light-font-weight: 400;
+
+@mixin title-font {
+  font: {
+    family: $font;
+    size: 18px;
+  }
+  line-height: 18px;
+}
 
 @mixin timer-font {
   font: {
@@ -41,6 +50,14 @@ $light-font-weight: 400;
     size: 14px;
   }
   line-height: 16px;
+}
+
+@mixin search-text {
+  font: {
+    family: $font;
+    size: 14px;
+  }
+  line-height: 18px;
 }
 
 @mixin phone-font {

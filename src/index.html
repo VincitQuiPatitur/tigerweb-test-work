@@ -226,7 +226,7 @@
                 <p class="widget__slash">/</p>
                 <div class="header__menu-button-container">
                     <p class="widget__menu widget__header-button">Неделя</p>
-                    <div class="menu-popup_opened widget__popup">
+                    <div class="menu-popup widget__popup">
                         <ul class="menu-popup__container">
                             <li class="menu-popup__item">
                                 <p class="menu-popup__item-text">Неделя</p>
@@ -317,7 +317,7 @@
                 <p class="widget__slash">/</p>
                 <div class="header__menu-button-container">
                     <p class="widget__menu widget__header-button">Неделя</p>
-                    <div class="menu-popup_opened widget__popup">
+                    <div class="menu-popup widget__popup">
                         <ul class="menu-popup__container">
                             <li class="menu-popup__item">
                                 <p class="menu-popup__item-text">Неделя</p>
@@ -420,6 +420,7 @@
     <div class="widgets-area__block widgets-area__block-b20"></div>
     <div class="widgets-area__block widgets-area__block-b21"></div>
 </main>
+
 <footer class="footer">
     <div class="footer__credits">
         <p class="footer__company-credits">&copy; 2015-2022 TigerWeb</p>
@@ -427,14 +428,15 @@
     </div>
 </footer>
 
-<div class="subheader-popup_opened">
+<div class="subheader-popup">
     <ul class="subheader-popup__container">
         <li class="subheader-popup__button subheader-popup__button_type_active">работа с задачами</li>
         <li class="subheader-popup__button">Счета и платежи</li>
         <li class="subheader-popup__button">Показатели продаж</li>
     </ul>
     <button class="subheader-popup__blocking-button">
-        <img src="<%=require('./images/unlock-icon.svg')%>" alt="Иконка открытого замка" class="subheader-popup__blocking-icon">
+        <img src="<%=require('./images/unlock-icon.svg')%>" alt="Иконка открытого замка"
+             class="subheader-popup__blocking-icon">
     </button>
 </div>
 
@@ -468,6 +470,93 @@
             <p class="user-profile-popup__option-text">Выйти из системы</p></li>
     </ul>
 </div>
+
+<div class="navbar-popup_opened">
+    <div class="navbar-popup__container">
+        <div class="navbar-popup__header">
+            <h2 class="navbar-popup__header-title">Мои дела</h2>
+            <div class="navbar-popup__header-close-button">
+                <svg class="navbar-popup__header-close-button-icon" width="12" height="12" viewBox="0 0 12 12"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M11.7071 1.70711C12.0976 1.31658 12.0976 0.683418 11.7071 0.292893C11.3166 -0.0976311 10.6834 -0.0976311 10.2929 0.292893L6 4.58579L1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L4.58579 6L0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683418 12.0976 1.31658 12.0976 1.70711 11.7071L6 7.41421L10.2929 11.7071C10.6834 12.0976 11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L7.41421 6L11.7071 1.70711Z"/>
+                </svg>
+            </div>
+            <ul class="navbar-popup__header-tab-container">
+                <li class="navbar-popup__header-tab-item navbar-popup__header-tab-item_active">Все дела</li>
+                <li class="navbar-popup__header-tab-item">События</li>
+                <li class="navbar-popup__header-tab-item">Задачи</li>
+            </ul>
+        </div>
+        <div class="navbar-popup__search-block">
+            <form action="" class="navbar-popup__search-form">
+                <input type="text" placeholder="Поиск и фильтр" class="navbar-popup__form-input">
+            </form>
+        </div>
+        <div class="navbar-popup__options">
+            <div class="navbar-popup__days-container">
+                <div class="navbar-popup__day-divider">
+                    <p class="navbar-popup__day">Сегодня</p>
+                    <div class="navbar-popup__divider">
+                    </div>
+                </div>
+                <ul class="navbar-popup__day-container">
+                    <li class="navbar-popup__day-task">
+                        <div class="navbar-popup__day-title-container">
+                            <img src="<%=require('./images/alarm-icon.svg')%>" alt="Иконка таймера на желтом фоне"
+                                 class="navbar-popup__day-title-icon">
+                            <h3 class="navbar-popup__day-title">Назначить встречу</h3>
+                        </div>
+                        <div class="navbar-popup__day-task-status">
+                            <img src="<%=require('./images/double-arrow-icon.svg')%>" alt=""
+                                 class="navbar-popup__day-task-icon">
+                            <p class="navbar-popup__day-status navbar-popup__day-status_active">В работе</p>
+                        </div>
+                        <p class="navbar-popup__day-mission">Создание логотипа</p>
+                        <p class="navbar-popup__task-date">16.01.22 16:00</p>
+                    </li>
+                    <li class="navbar-popup__day-task">
+                        <div class="navbar-popup__day-title-container">
+                            <img src="<%=require('./images/task-completed-icon.svg')%>" alt=""
+                                 class="navbar-popup__day-title-icon">
+                            <h3 class="navbar-popup__day-title">Проверить бриф</h3>
+                        </div>
+                        <div class="navbar-popup__day-task-status">
+                            <img src="<%=require('./images/arrow-icon.svg')%>" alt=""
+                                 class="navbar-popup__day-task-icon">
+                            <p class="navbar-popup__day-status">Ожидает</p>
+                        </div>
+                        <p class="navbar-popup__day-mission">Корпоративный Ksoil</p>
+                        <p class="navbar-popup__task-date">16.01.22 18:00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-popup__days-container">
+                <div class="navbar-popup__day-divider">
+                    <p class="navbar-popup__day">Завтра</p>
+                    <div class="navbar-popup__divider"></div>
+                </div>
+                <ul class="navbar-popup__day-container">
+                    <li class="navbar-popup__day-task">
+                        <div class="navbar-popup__day-title-container">
+                            <img src="<%=require('./images/task-completed-icon.svg')%>" alt=""
+                                 class="navbar-popup__day-title-icon">
+                            <h3 class="navbar-popup__day-title">Создание логотипа</h3>
+                        </div>
+                        <div class="navbar-popup__day-task-status">
+                            <img src="<%=require('./images/arrow-icon.svg')%>" alt=""
+                                 class="navbar-popup__day-task-icon">
+                            <p class="navbar-popup__day-status">Ожидает</p>
+                        </div>
+                        <p class="navbar-popup__day-mission">Корпоративный Ksoil</p>
+                        <p class="navbar-popup__task-date">22.01.22 12:00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--<div class="menu-popup_opened">
     <ul class="menu-popup__container">
         <li class="menu-popup__item">

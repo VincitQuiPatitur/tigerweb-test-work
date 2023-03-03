@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__task-date {
+  color: $task-color-red;
+  @include phone-font;
+  font-weight: $light-font-weight;
+  margin: 0 0 0 auto;
+}

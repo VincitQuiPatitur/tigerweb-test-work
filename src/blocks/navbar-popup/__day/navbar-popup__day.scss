@@ -1,0 +1,7 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__day {
+  margin: 0;
+  @include info-text;
+  color: $widget-border;
+}

@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__header-close-button-icon {
+  fill: $card-header-text-color;
+  transition: fill .3s ease-in-out 0s;
+}
+
+.navbar-popup__header-close-button:hover .navbar-popup__header-close-button-icon {
+  fill: $border-top-blue;
+}

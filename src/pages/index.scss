@@ -50,6 +50,34 @@
 @import "../blocks/navbar/__menu-support/navbar__menu-support.scss";
 @import "../blocks/navbar/__menu-support-icon/navbar__menu-support-icon.scss";
 
+@import "../blocks/navbar-popup/navbar-popup.scss";
+@import "../blocks/navbar-popup/_opened/navbar-popup_opened.scss";
+@import "../blocks/navbar-popup/__container/navbar-popup__container.scss";
+@import "../blocks/navbar-popup/__header/navbar-popup__header.scss";
+@import "../blocks/navbar-popup/__header-title/navbar-popup__header-title.scss";
+@import "../blocks/navbar-popup/__header-close-button/navbar-popup__header-close-button.scss";
+@import "../blocks/navbar-popup/__header-close-button-icon/navbar-popup__header-close-button-icon.scss";
+@import "../blocks/navbar-popup/__header-tab-container/navbar-popup__header-tab-container.scss";
+@import "../blocks/navbar-popup/__header-tab-item/navbar-popup__header-tab-item.scss";
+@import "../blocks/navbar-popup/__header-tab-item/_active/navbar-popup__header-tab-item_active.scss";
+@import "../blocks/navbar-popup/__search-block/navbar-popup__search-block.scss";
+@import "../blocks/navbar-popup/__search-form/navbar-popup__search-form.scss";
+@import "../blocks/navbar-popup/__form-input/navbar-popup__form-input.scss";
+@import "../blocks/navbar-popup/__options/navbar-popup__options.scss";
+@import "../blocks/navbar-popup/__days-container/navbar-popup__days-container.scss";
+@import "../blocks/navbar-popup/__day-divider/navbar-popup__day-divider.scss";
+@import "../blocks/navbar-popup/__day/navbar-popup__day.scss";
+@import "../blocks/navbar-popup/__divider/navbar-popup__divider.scss";
+@import "../blocks/navbar-popup/__day-container/navbar-popup__day-container.scss";
+@import "../blocks/navbar-popup/__day-task/navbar-popup__day-task.scss";
+@import "../blocks/navbar-popup/__day-title-container/navbar-popup__day-title-container.scss";
+@import "../blocks/navbar-popup/__day-title/navbar-popup__day-title.scss";
+@import "../blocks/navbar-popup/__day-task-status/navbar-popup__day-task-status.scss";
+@import "../blocks/navbar-popup/__day-status/navbar-popup__day-status.scss";
+@import "../blocks/navbar-popup/__day-status/_active/navbar-popup__day-status_active.scss";
+@import "../blocks/navbar-popup/__day-mission/navbar-popup__day-mission.scss";
+@import "../blocks/navbar-popup/__task-date/navbar-popup__task-date.scss";
+
 @import "../blocks/widgets-area/widgets-area.scss";
 @import "../blocks/widgets-area/__block/widgets-area__block.scss";
 

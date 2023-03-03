@@ -1,0 +1,16 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__container {
+  position: fixed;
+  top: 0;
+  right: $panel-size;
+  z-index: 9;
+  box-shadow: 0 7px 10px rgba(27, 36, 49, 0.15), 0 3px 13px rgba(27, 36, 49, 0.05);
+  border-radius: $gap16 0 0 $gap16;
+  background-color: $header-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  width: 360px;
+}

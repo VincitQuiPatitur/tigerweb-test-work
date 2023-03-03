@@ -1,0 +1,11 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__day-status {
+  margin: 0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  @include mail-font;
+  font-weight: $main-font-weight;
+  color: $card-header-text-color;
+  background-color: $button-background;
+}

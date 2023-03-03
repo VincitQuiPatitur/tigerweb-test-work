@@ -1,7 +1,7 @@
 @import "../../../pages/variables.scss";
 
 .widget__header-button {
-  text-decoration: underline 1px solid $border-top-blue;
+  border-bottom: 1px solid $border-top-blue;
   cursor: $cursor-pointer;
   color: $primary-text-color;
   transition: color 0.3s ease-in-out;

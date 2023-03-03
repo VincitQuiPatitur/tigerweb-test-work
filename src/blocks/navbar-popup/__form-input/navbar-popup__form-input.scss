@@ -1,0 +1,19 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__form-input {
+  width: 100%;
+  padding: $gap8;
+  box-sizing: border-box;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-small;
+  outline: none;
+  color: $card-header-text-color;
+  @include search-text;
+  font-weight: $light-font-weight;
+}
+
+.navbar-popup__form-input::placeholder {
+  color: $optional-text-color;
+  @include search-text;
+  font-weight: $light-font-weight;
+}

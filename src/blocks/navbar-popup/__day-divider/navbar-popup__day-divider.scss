@@ -1,0 +1,7 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__day-divider {
+  width: 100%;
+  @include flexible-center;
+  gap: $gap8;
+}

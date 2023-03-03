@@ -1,0 +1,16 @@
+@import "../../../../pages/variables.scss";
+
+.navbar-popup__header-tab-item_active:after {
+  content: "";
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  margin-top: 10px;
+  background-color: $menu-color;
+}
+
+.navbar-popup__header-tab-container .navbar-popup__header-tab-item_active {
+  color: $primary-text-color;
+}

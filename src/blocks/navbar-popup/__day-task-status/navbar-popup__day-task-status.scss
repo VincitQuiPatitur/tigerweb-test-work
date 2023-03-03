@@ -1,0 +1,8 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__day-task-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: $gap8;
+}

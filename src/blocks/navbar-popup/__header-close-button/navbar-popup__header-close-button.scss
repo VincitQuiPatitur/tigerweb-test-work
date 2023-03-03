@@ -1,0 +1,10 @@
+@import "../../../pages/variables.scss";
+
+.navbar-popup__header-close-button {
+  grid-column: 2 / 3;
+  margin: 0 0 0 auto;
+  width: $icon-size;
+  height: $icon-size;
+  @include flexible-center;
+  cursor: pointer;
+}
